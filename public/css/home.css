@@ -33,7 +33,7 @@ footer .brand {
   margin-bottom: 1.063rem;
 }
 
-#intro #cover {
+#intro .cover {
   background-image: url(../images/intro.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -45,21 +45,37 @@ footer .brand {
   margin: 0 auto;
 }
 
-#start #cover {
-  width: 627px;
+#start {
   height: 627px;
+  background-position: left center;
   background-image: url(../images/start.svg);
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.highlight {
-  background-color: rgba(245, 197, 78, 0.58);
-  padding: 74px 54px;
+#start .highlight {
+  width: 70%;
+  padding: 75px 30px;
+  background-color: rgba(245, 197, 78, .58);
   color: var(--secondary);
-  font-size: 50px;
-  font-weight: 700;
-  letter-spacing: 2.5px;
   top: 50%;
   right: 0;
   transform: translateY(-50%);
+  border-radius: .35rem;
+}
+
+@media only screen and (max-width: 768px) {
+  #intro .cover {
+    width: 100%;
+    height: 480px;
+  }
+  #start {
+    height: 480px;
+  }
+  #start .highlight {
+    width: 100%;
+    padding: 38px 25px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }

@@ -110,7 +110,7 @@
               Top <span>{{ $i }}</span>
             </div>
             <img class="company-logo" alt="TLSA" aria-label="TSLA"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Tesla_logo.png/1200px-Tesla_logo.png" />
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Tesla_logo.png/1200px-Tesla_logo.png">
             <div class="company-detail d-flex flex-column">
               <span class="name">TSLA</span>
               <span class="description">Overview Segment Analysis Financials Executives SWOT Analysis Locations

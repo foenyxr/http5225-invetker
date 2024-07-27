@@ -98,18 +98,12 @@ main {
 
 body.closed main {
   padding-left: var(--sidebar-width-closed);
-  /* padding-left: calc(var(--sidebar-width-closed) + 1rem); */
 }
 
 @media only screen and (max-width: 576px) {
   main, body.closed main {
     padding-left: 0;
-    /* padding-left: 1rem; */
   }
-}
-
-form[name=search] label.col-form-label {
-  width: 58px;
 }
 
 .card {
@@ -278,19 +272,9 @@ main .breadcrumb {
   background-color: rgb(var(--bs-warning-rgb)) !important;
 }
 
-.form-label.required::before {
-  content: '* ';
-  color: rgb(var(--bs-danger-rgb));
-}
-
-form label {
-  font-size: 14px;
-  color: rgb(var(--gray800));
-}
-
 .selectize-input {
   border-radius: .25rem !important;
-  border-color: none;
+  border-color: unset;
   box-shadow: none;
 }
 

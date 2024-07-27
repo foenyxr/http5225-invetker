@@ -8,9 +8,9 @@ $(function () {
       startDate: start,
       endDate: end,
       maxDate: moment(),
-      applyButtonClasses: "btn-warning text-light",
       drops: "auto",
       timePicker: false,
+      autoApply: true,
     },
   );
 
@@ -20,10 +20,8 @@ $(function () {
     startDate: moment(),
     maxDate: moment(),
     timePicker24Hour: false,
-    autoApply: true,
-    open: true,
-    drops: "auto",
     applyButtonClasses: "btn-warning text-light",
+    drops: "auto",
     locale: {
       format: "YYYY/MM/DD HH:mm:ss",
     },
@@ -132,6 +130,7 @@ $(function () {
         delimiter: " - ",
         persist: false,
         maxItems: 1,
+        maxItems: null,
         valueField: "ticker",
         labelField: "ticker",
         searchField: ["ticker", "name", "exchange"],

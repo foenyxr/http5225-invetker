@@ -1,10 +1,10 @@
 @extends('/shared/layout/dashboard')
 
 @section('styles')
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css">
   <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/css/selectize.bootstrap5.min.css" />
-  <link rel="stylesheet" href="/css/transactions.css" />
+    href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/css/selectize.bootstrap5.min.css">
+  <link rel="stylesheet" href="/css/transactions.css">
 @endsection
 
 @section('scripts')
@@ -33,18 +33,20 @@
   </div>
   <div class="container-fluid d-flex flex-grow-1 flex-column">
     <form name="search" class="row mb-4 gap-3 align-items-center">
-      <div class="col-12 col-xl-4 d-flex gap-3">
+      <div class="col-12 col-xl-3 d-flex gap-3">
         <label class="col-form-label" for="daterange">Date</label>
         <div class="input-group w-100" id="daterangepicker">
-          <input type="text" class="form-control" name="daterange" />
+          <input type="text" class="form-control" id="daterange" name="daterange">
           <span class="input-group-text bg-light">
-            <img src="{{ asset('images/icons/calendar.svg') }}" />
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
+              <path fill="#c3c3c3" d="M12 12h5v5h-5zm7-9h-1V1h-2v2H8V1H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m0 2v2H5V5zM5 19V9h14v10z" />
+            </svg>
           </span>
         </div>
       </div>
       <div class="col-12 col-xl-3 d-flex gap-3">
-        <label class="col-form-label" for="ticker">Ticker</label>
-        <input name="ticker" class="ticker w-100" required />
+        <label class="col-form-label">Ticker</label>
+        <input name="ticker" class="ticker w-100">
       </div>
       <div class="col-auto">
         <button type="submit" class="btn btn-warning px-3 text-light">

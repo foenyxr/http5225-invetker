@@ -72,6 +72,20 @@ section:not(:last-child) {
   margin-bottom: 4rem;
 }
 
+.form-label.required::before {
+  content: '* ';
+  color: rgb(var(--bs-danger-rgb));
+}
+
+form[name=search] label.col-form-label {
+  width: 58px;
+}
+
+form label {
+  font-size: 14px;
+  color: rgb(var(--gray800));
+}
+
 .btn-transparent {
   background-color: transparent;
   border-color: transparent;
