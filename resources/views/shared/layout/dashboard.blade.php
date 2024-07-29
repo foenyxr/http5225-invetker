@@ -13,7 +13,7 @@
   @endif
 </head>
 
-<body class="{{ isset($_COOKIE['slider-collapsed']) ? 'closed' : '' }}">
+<body class="{{ isset($_COOKIE['slider-collapsed']) && $_COOKIE['slider-collapsed'] == 1 ? 'closed' : '' }}">
   <header class="fixed-top d-flex">
     <a class="brand" href="/dashboard"></a>
     <div class="d-flex flex-grow-1 justify-content-between">
