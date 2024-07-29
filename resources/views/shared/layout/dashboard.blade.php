@@ -15,7 +15,7 @@
 
 <body class="{{ isset($_COOKIE['slider-collapsed']) ? 'closed' : '' }}">
   <header class="fixed-top d-flex">
-    <div class="brand"></div>
+    <a class="brand" href="/dashboard"></a>
     <div class="d-flex flex-grow-1 justify-content-between">
       <button type="button" id="sidebar-toggle" class="btn btn-transparent rounded-0">
         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">

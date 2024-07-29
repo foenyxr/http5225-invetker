@@ -13,6 +13,7 @@ header .brand {
   background-size: auto;
   background-color: rgb(var(--bs-warning-rgb));
   overflow: hidden;
+  transition: none;
 }
 
 header .dropdown #account #name {
