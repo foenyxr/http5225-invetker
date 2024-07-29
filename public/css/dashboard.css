@@ -1,0 +1,293 @@
+header {
+  height: var(--header-height);
+  border-bottom: 1px solid rgba(234, 234, 234, 1);;
+  background-color: rgba(243, 243, 243, 1);
+}
+
+header #sidebar-toggle {
+  width: calc(var(--header-height) - 1px);
+}
+
+header .brand {
+  min-width: var(--sidebar-width);
+  background-size: auto;
+  background-color: rgb(var(--bs-warning-rgb));
+  overflow: hidden;
+  transition: none;
+}
+
+header .dropdown #account #name {
+  color: rgb(var(--bs-warning-rgb));
+}
+
+header .dropdown #account #role {
+  color: rgb(var(--gray500));
+  font-size: .75rem;
+}
+
+header .dropdown img {
+  width: 43px;
+  height: 43px;
+  border: 2px solid rgb(var(--bs-warning-rgb));
+}
+
+aside {
+  width: var(--sidebar-width);
+  background-color: rgb(var(--light));
+  border-right: 1px solid rgba(234, 234, 234, 1);
+  transition: all .2s;
+  padding-top: var(--header-height);
+  top: 0;
+  overflow: auto;
+  height: 100vh;
+  z-index: 1000 !important;
+}
+
+aside .nav li a {
+  margin: 10px 6px 0;
+  color: rgb(var(--gray700));
+  height: 45px;
+}
+
+aside .nav li a span {
+  margin-left: 20px;
+  width: 95px;
+}
+
+aside a.active,
+aside .nav-link:hover,
+aside .nav-link:focus,
+aside .nav-link:hover {
+  background-color: rgb(var(--bs-warning-rgb)) !important;
+  color: rgb(var(--light)) !important;
+}
+
+body.closed aside {
+  width: var(--sidebar-width-closed);
+  left: 0;
+}
+
+@media only screen and (max-width: 576px) {
+  body.closed aside {
+    left: -70px !important;
+  }
+}
+
+body.closed aside .nav li span {
+  display: none;
+}
+
+body.closed header .brand,
+body.closed aside {
+  min-width: var(--sidebar-width-closed);
+  left: 0;
+}
+
+body.closed header .brand {
+  background-size: 168px;
+  background-position: 15px;
+}
+
+main {
+  padding: var(--header-height) 0 1rem var(--sidebar-width);
+  height: 100%;
+  min-height: 100vh;
+  background-color: rgba(243, 243, 243, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+body.closed main {
+  padding-left: var(--sidebar-width-closed);
+}
+
+@media only screen and (max-width: 576px) {
+  main, body.closed main {
+    padding-left: 0;
+  }
+}
+
+.card {
+  border-radius: 6px;
+  border-top: 4px solid rgb(var(--bs-warning-rgb));
+  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.07);
+  padding: 0;
+}
+
+.card .info {
+  top: 30px;
+  left: 20px;
+  color: rgb(var(--bs-warning-rgb));
+}
+
+.card .info .value {
+  margin-top: 3px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.card .changed {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.card .status {
+  bottom: 30px;
+  left: 20px;
+}
+
+.card > .title {
+  color: rgb(var(--bs-warning-rgb));
+  font-weight: 700;
+  padding: 17px 20px;
+  border: 1px solid rgb(var(--gray150));
+}
+
+.card .notes,
+.card table {
+  font-size: 12px;
+}
+
+.card table th,
+.card table td {
+  padding: 15px 20px !important;
+  white-space: nowrap;
+}
+
+.arrow-down {
+  width: 18px;
+  height: 18px;
+  background-image: url(../images/icons/arrow-down.svg);
+}
+
+.highcharts-container {
+  width:100% !important;
+  height:100% !important;
+}
+
+#net-liquidity {
+  max-width: 460px;
+  height: 233px;
+  overflow: hidden;
+}
+
+#holdings,
+#transactions {
+  height: 385px;
+}
+
+#top-portfolio .content {
+  gap: 20px;
+}
+
+#top-portfolio .ranking {
+  padding: 27px 20px;
+  gap: 20px;
+  min-width: 468px;
+  width: 468px;
+}
+
+#top-portfolio .ranking .no {
+  color: rgb(var(--bs-warning-rgb));
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 900;
+  margin-top: -20px;
+}
+
+#top-portfolio .ranking .no span {
+  font-size: 64px;
+  line-height: 47px;
+}
+
+#top-portfolio .ranking .company-logo {
+  width: 158px;
+  min-width: 158px;
+  height: 158px;
+  border: 1px solid rgb(var(--gray150));
+  object-fit: contain;
+}
+
+#top-portfolio .ranking .company-detail {
+  font-size: 12px;
+  font-weight: 200;
+  gap: 4px;
+  margin-top: 18px;
+}
+
+#top-portfolio .ranking .company-detail .name {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+#top-portfolio .ranking .company-detail .description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+
+.table-thead-uppercase thead {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* https://stackoverflow.com/questions/21168521/table-fixed-header-and-scrollable-body */
+.table-thead-fixed {
+  overflow: auto;
+  height: 100px;
+}
+
+.table-thead-fixed thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.form-control:focus {
+  border-color: rgb(var(--bs-warning-rgb));
+}
+
+.form-select:focus {
+  border-color: rgb(var(--bs-warning-rgb));
+  box-shadow: none;
+}
+
+main .breadcrumb {
+  font-size: 14px;
+  color: rgba(99, 101, 102, 1);
+}
+
+.breadcrumb-wrapper {
+  padding: 1rem;
+  background-color: rgb(237 237 237);
+}
+
+.daterangepicker td.active,
+.daterangepicker td.active:hover {
+  background-color: rgb(var(--bs-warning-rgb)) !important;
+}
+
+.selectize-input {
+  border-radius: .25rem !important;
+  border-color: unset;
+  box-shadow: none;
+}
+
+.selectize-input.focus {
+  border-color: rgb(var(--bs-primary)) !important;
+  box-shadow: none !important;
+}
+
+.selectize-dropdown .selected {
+  background-color: rgb(var(--bs-primary)) !important;
+}
+
+.selectize-control.plugin-clear_button .clear {
+  top: -1px !important;
+}

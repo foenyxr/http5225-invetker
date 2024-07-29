@@ -1,0 +1,81 @@
+﻿header {
+  background-color: rgb(var(--bs-warning-rgb));
+  width: 100%;
+  height: 58px;
+}
+
+header nav {
+  gap: 48px;
+}
+
+header nav a {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+header .brand {
+  width: 168px;
+  height: 40px;
+}
+
+footer {
+  padding: 1.875rem 0;
+}
+
+footer .slogan {
+  font-size: 0.938rem;
+}
+
+footer .brand {
+  width: 168px;
+  height: 40px;
+  margin-bottom: 1.063rem;
+}
+
+#intro .cover {
+  background-image: url(../images/intro.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  color: var(--secondary);
+  letter-spacing: 2px;
+  width: 614px;
+  height: 504px;
+  margin: 0 auto;
+}
+
+#start {
+  height: 627px;
+  background-position: left center;
+  background-image: url(../images/start.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#start .highlight {
+  width: 70%;
+  padding: 75px 30px;
+  background-color: rgba(245, 197, 78, .58);
+  color: var(--secondary);
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  border-radius: .35rem;
+}
+
+@media only screen and (max-width: 768px) {
+  #intro .cover {
+    width: 100%;
+    height: 480px;
+  }
+  #start {
+    height: 480px;
+  }
+  #start .highlight {
+    width: 100%;
+    padding: 38px 25px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
