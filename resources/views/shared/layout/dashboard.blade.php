@@ -13,7 +13,7 @@
   @endif
 </head>
 
-<body class="{{ $_COOKIE['slider-collapsed'] ? 'closed' : '' }}">
+<body class="{{ isset($_COOKIE['slider-collapsed']) ? 'closed' : '' }}">
   <header class="fixed-top d-flex">
     <div class="brand"></div>
     <div class="d-flex flex-grow-1 justify-content-between">
