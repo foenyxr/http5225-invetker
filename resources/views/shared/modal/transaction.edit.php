@@ -11,12 +11,11 @@
       <div class="tab-content" id="editTabContent">
         <div class="tab-pane fade show active" id="edit-tab-pane" role="tabpanel" aria-labelledby="edit-tab"
           tabindex="0">
-          <form name="edit" action="api/transaction" method="POST" class="mt-3 needs-validation"
-            novalidate>
+          <form name="edit" action="api/transaction" method="POST" class="mt-3">
             <div class="px-4">
               <div class="mb-3">
                 <label class="form-label required">Ticker</label>
-                <input class="form-control ticker" name="ticker" required>
+                <input class="form-control" name="ticker" disabled required>
               </div>
               <div class="mb-3">
                 <label for="edit-datetime" class="form-label required">Date and Time:</label>
@@ -32,8 +31,6 @@
                 <select id="edit-action" class="form-control" name="action">
                   <option>Bought</option>
                   <option>Sold</option>
-                  <option>Deposit</option>
-                  <option>Withdraw</option>
                 </select>
               </div>
               <div class="mb-3">

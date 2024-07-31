@@ -11,11 +11,11 @@
 </head>
 
 <body>
-  <?php include_once('resources/views/shared/modal/user.php') ?>
+  <?php include_once(__DIR__ . '/resources/views/shared/modal/user.php') ?>
   <header>
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-warning">
       <div class="container">
-        <a href="/">
+        <a href="./index.php" title="INVETKER">
           <div class="brand"></div>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
@@ -25,10 +25,10 @@
         <div class="navbar-collapse collapse justify-content-end gap-sm-3">
           <ul class="navbar-nav gap-sm-3">
             <li class="nav-item">
-              <a class="nav-link text-dark" href="/">Home</a>
+              <a title="Home" class="nav-link text-dark active" href="./index.php">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="#">About</a>
+              <a title="About" class="nav-link text-dark" href="./about.php">About</a>
             </li>
           </ul>
           <button id="signinup" class="btn btn-outline-dark rounded-0 px-3">SIGN IN/UP</button>
@@ -71,16 +71,15 @@
         <div class="col-auto text-light fs-6">
           <div class="title fw-bold">Get Started</div>
           <ul class="list-unstyled">
-            <li class="mt-2"><a href="#">Home</a></li>
-            <li class="mt-2"><a href="#">About</a></li>
-            <li class="mt-2"><a href="#">Ranking</a></li>
+            <li class="mt-2"><a title="Home" href="./index.php">Home</a></li>
+            <li class="mt-2"><a title="About" href="./about.php">About</a></li>
           </ul>
         </div>
         <div class="col-auto text-light fs-6">
           <div class="title fw-bold">Resources</div>
           <ul class="list-unstyled">
-            <li class="mt-2"><a href="#">Contact</a></li>
-            <li class="mt-2"><a href="#">Privacy Policy</a></li>
+            <li class="mt-2"><a title="Contact" href="#">Contact</a></li>
+            <li class="mt-2"><a title="Privacy Policy" href="#">Privacy Policy</a></li>
           </ul>
         </div>
       </div>
@@ -88,7 +87,7 @@
         <hr>
       </div>
       <div class="text-light text-center">
-        &copy; 2024 INVETKER, All right reserved.
+        &copy; <?php echo date('Y') ?> INVETKER, All right reserved.
       </div>
     </div>
   </footer>

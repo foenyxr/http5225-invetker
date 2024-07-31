@@ -11,8 +11,7 @@
       <div class="tab-content" id="addTabContent">
         <div class="tab-pane fade show active" id="manually-tab-pane" role="tabpanel" aria-labelledby="manually-tab"
           tabindex="0">
-          <form name="add" action="api/transaction" method="POST" class="mt-3 needs-validation"
-            novalidate>
+          <form name="add" action="api/transaction" method="POST" class="mt-3">
             <div class="px-4">
               <div class="mb-3">
                 <label class="form-label required">Ticker</label>
@@ -30,10 +29,8 @@
               <div class="mb-3">
                 <label for="action" class="form-label required">Action</label>
                 <select id="action" class="form-control" name="action">
-                  <option>Bought</option>
-                  <option>Sold</option>
-                  <option>Deposit</option>
-                  <option>Withdraw</option>
+                  <option value="Bought">Bought</option>
+                  <option value="Sold">Sold</option>
                 </select>
               </div>
               <div class="mb-3">

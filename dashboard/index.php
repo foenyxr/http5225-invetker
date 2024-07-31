@@ -11,8 +11,8 @@
 </head>
 
 <body class="<?php echo isset($_COOKIE['slider-collapsed']) && $_COOKIE['slider-collapsed'] == 1 ? 'closed' : '' ?>">
-  <?php include_once ('resources/views/shared/modal/transaction.php') ?>
-  <?php include_once ('resources/views/shared/modal/transaction.edit.php') ?>
+  <?php include_once ('../resources/views/shared/modal/transaction.php') ?>
+  <?php include_once ('../resources/views/shared/modal/transaction.edit.php') ?>
   <header class="fixed-top d-flex">
     <a class="brand" href="index.php"></a>
     <div class="d-flex flex-grow-1 justify-content-between">

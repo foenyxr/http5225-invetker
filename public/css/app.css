@@ -36,13 +36,17 @@ body * {
   }
 }
 
-.btn:focus,
+.container main {
+  min-height: 500px;
+}
+
+/* .btn:focus,
 .btn:active:focus,
 .btn-link.nav-link:focus,
 .form-control:focus,
 .form-check-input:focus {
   box-shadow: none;
-}
+} */
 
 a {
   text-decoration: none;
@@ -54,6 +58,16 @@ a {
 a.active,
 a:hover {
   color: rgb(var(--light));
+}
+
+.form-control:focus {
+  border-color: rgb(var(--bs-warning-rgb));
+  box-shadow: none;
+}
+
+.form-select:focus {
+  border-color: rgb(var(--bs-warning-rgb));
+  box-shadow: none;
 }
 
 .brand {

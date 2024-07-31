@@ -14,8 +14,9 @@
       </ul>
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="sign-in" role="tabpanel" aria-labelledby="sign-in" tabindex="0">
-          <form name="login" class="needs-validation mt-3" method="POST" novalidate>
+          <form name="login" class="mt-3" method="POST">
             <div class="px-4">
+              <div class="alert alert-danger d-none" role="alert"></div>
               <div class="mb-3">
                 <label for="sign-in-email" class="form-label required">Email</label>
                 <input type="email" class="form-control" id="sign-in-email" name="email" required>
@@ -32,8 +33,9 @@
           </form>
         </div>
         <div class="tab-pane fade" id="sign-up" role="tabpanel" aria-labelledby="sign-up" tabindex="0">
-          <form name="register" class="needs-validation mt-3" method="POST" novalidate>
-            <div class="px-4">
+          <form name="register" class="mt-3" method="POST">
+            <div class="px-4 mb-3">
+              <div class="alert alert-danger d-none" role="alert"></div>
               <div class="mb-3">
                 <label for="name" class="form-label required">Name</label>
                 <input type="text" class="form-control" id="name" name="name" required>

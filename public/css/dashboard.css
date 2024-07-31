@@ -29,6 +29,7 @@ header .dropdown img {
   width: 43px;
   height: 43px;
   border: 2px solid rgb(var(--bs-warning-rgb));
+  object-fit: contain;
 }
 
 aside {
@@ -178,6 +179,7 @@ body.closed main {
 
 #top-portfolio .content {
   gap: 20px;
+  min-height: 200px;
 }
 
 #top-portfolio .ranking {
@@ -185,6 +187,11 @@ body.closed main {
   gap: 20px;
   min-width: 468px;
   width: 468px;
+}
+
+#daterangepicker .input-group-text {
+  border-top-right-radius: .25rem;
+  border-bottom-right-radius: .25rem;
 }
 
 #top-portfolio .ranking .no {
@@ -206,6 +213,7 @@ body.closed main {
   height: 158px;
   border: 1px solid rgb(var(--gray150));
   object-fit: contain;
+  padding: 10px;
 }
 
 #top-portfolio .ranking .company-detail {
@@ -247,15 +255,7 @@ body.closed main {
   position: sticky;
   top: 0;
   z-index: 1;
-}
-
-.form-control:focus {
-  border-color: rgb(var(--bs-warning-rgb));
-}
-
-.form-select:focus {
-  border-color: rgb(var(--bs-warning-rgb));
-  box-shadow: none;
+  background-color: rgb(var(--light));
 }
 
 main .breadcrumb {
@@ -290,4 +290,8 @@ main .breadcrumb {
 
 .selectize-control.plugin-clear_button .clear {
   top: -1px !important;
+}
+
+.ck-content {
+  height: 350px;
 }
