@@ -1,3 +1,11 @@
+<?php
+require_once(__DIR__ . '/database/index.php');
+
+$sql = "SELECT * FROM about";
+$result = mysqli_query($connect, $sql);
+$content = $result->fetch_all(MYSQLI_ASSOC);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,7 +47,7 @@
   <div class="container">
     <main class="py-5">
       <section id="about">
-        Content
+        <?php echo html_entity_decode($content[0]['content']); ?>
       </section>
     </main>
   </div>
