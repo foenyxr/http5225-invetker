@@ -1,5 +1,10 @@
 {
     "require": {
         "scheb/yahoo-finance-api": "^4.10"
+    },
+    "config": {
+        "platform": {
+            "php": "8.3.9"
+        }
     }
 }

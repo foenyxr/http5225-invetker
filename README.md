@@ -1,6 +1,6 @@
 # Invetker
 
-![Invetker](https://raw.githubusercontent.com/foenyxr/pokemon-organizer/4def1f7e9cbaabe7504f7a7bfea743479ec1670d/public/images/brand.svg)
+![Invetker](https://raw.githubusercontent.com/foenyxr/http5225-invetker/4def1f7e9cbaabe7504f7a7bfea743479ec1670d/public/images/brand.svg)
 
 ## Description
 INVETKER is a beginner-friendly stock tracking platform with a user-friendly interface.
