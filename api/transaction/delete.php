@@ -5,8 +5,6 @@ header('Content-type: application/json');
 include '../../shared/isLoggedin.php';
 include '../../database/index.php';
 
-print_r($_GET);
-
 $data = [ "errors" => [] ];
 
 $requiredFields = ['id'];
